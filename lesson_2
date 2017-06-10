@@ -1,0 +1,7 @@
+Git commands:
+git status; see all the files that have changed since the last commit
+git init; initialise a git repository
+git add; add specified files to a git staging area before committing
+
+When you initialise a repository then git creates a hidden directory with the
+history of all the files in it

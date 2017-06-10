@@ -1,0 +1,23 @@
+We can use diif -u to output in uniform diff format.
+Anything with a - is the old doc and a + in the new doc
+Lines without a + or - are in both code
+
+Different software use version control, in google docs and dropbox for example
+This makes you more efficient because you can undo edits that don't work
+
+Git commands:
+git diff; this is git's version of the diff command
+git log; you can see all the commits to that project
+git log --stat; see what files were affected in the commit and more info
+
+Pros and cons of manual commit choosing:
+Pro, logical changes are committed and code still understandable
+Con, forget to commit and you loose your work
+
+Multiple file tracking is useful because if your code spans more than one file
+they all get updated together, even if they weren't all changed
+
+With git diff you have to count all of the changes, there's not a summary
+
+You will be more confident because you can identify where bugs were introduced
+and easily revert those changes if needed
