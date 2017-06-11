@@ -2,6 +2,12 @@ Git commands:
 git status; see all the files that have changed since the last commit
 git init; initialise a git repository
 git add; add specified files to a git staging area before committing
+git commit; commit all changes in the staging area, you have to use it with
+	the -m option to add a message in quotation marks
+git diff --staged; see the differences between the staging area and the last
+	commit
+git branch; no arguments shows all the branches, if you add an argument after
+	then it will create a branch with that argument as the branch name
 
 When you initialise a repository then git creates a hidden directory with the
 history of all the files in it
@@ -13,3 +19,14 @@ opposed to committing every individual fiel from the working directory
 If something is in the staging area it will come under "changes to be
 committed" when running git status
 
+For branches an asterix shows the branch that is currently checked out
+
+You can change which branch you're editting on by using git checkout
+
+Then when you change something in the file and commit it, it will commit on
+that branch only
+
+Branches are useful if you have a version of something that you want to add
+an experimental feature to, something that might not work, so you do all the
+edits on that branch and commit it to that branch. This keeps the experimental
+and risky changes off the master branch so you always have a working version
