@@ -8,7 +8,13 @@ git diff --staged; see the differences between the staging area and the last
 	commit
 git branch; no arguments shows all the branches, if you add an argument after
 	then it will create a branch with that argument as the branch name
-
+git checkout -b new_branch_name; creates a new branch called new_branch_name
+	and then runs git checkout to that new branch
+git merge main_branch updated_branch; merge the 2 branches together, where you
+	update the main_branch with changes from the updated_branch
+git show; you add the git ID as an argument and this shows the difference
+	between this commit and the parent
+git branch -d branch_name; delete the branch label branch_name
 When you initialise a repository then git creates a hidden directory with the
 history of all the files in it
 
@@ -30,3 +36,12 @@ Branches are useful if you have a version of something that you want to add
 an experimental feature to, something that might not work, so you do all the
 edits on that branch and commit it to that branch. This keeps the experimental
 and risky changes off the master branch so you always have a working version
+
+Be careful about committing changes on a detatched HEAD state as these won't be
+updated on any branch and you can't get those commits back
+
+If you're going to merge 2 branches together, decided which one wants to be
+added to the other, and make sure you're on the branch that you want to
+"update" with changes. For example it might be a feature you want to add to
+the main project, then be on master branch and use "git merge master update"
+Where the update is the branch with features you want to add
