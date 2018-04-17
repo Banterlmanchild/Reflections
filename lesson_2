@@ -20,7 +20,7 @@ history of all the files in it
 
 A staging area is an intermedite between the working directory (local) and
 the commit (git) and it bundles files together to commit them in one thing as
-opposed to committing every individual fiel from the working directory
+opposed to committing every individual field from the working directory
 
 If something is in the staging area it will come under "changes to be
 committed" when running git status
